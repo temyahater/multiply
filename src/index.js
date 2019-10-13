@@ -1,23 +1,4 @@
-function multiply(first, second) {
-  /*var str = '';
-  var temp = 0;
-  var a = '';
-  var b = '';
-  var first2 = '';
-  for(var i = 0; i < first.length;i++){
-    for (var j = 0; j< second.length; j++) {
-      if(first.length > 1){
-        a = first[i]
-        for(var f = 0; f < first.length-1;f++){
-          a += '0';
-          first2 += first[f+1]; 
-        }
-        alert(first2);
-      }
-      temp += (Number(first[i])*Number(second[j]));
-    } 
-    str = Number(str) + temp;
-  } */
+module.exports = function multiply(first, second) {
   var arr = [];
   var firstD = first.split('').reverse();
   var secondD = second.split('').reverse();
@@ -37,5 +18,5 @@ function multiply(first, second) {
     else if(step != 0) arr[i+1];
   }
   var str = arr.reverse().join('');
-  console.log(str);
+  return str;
 }
